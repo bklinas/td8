@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="stylee.css"/>
+    <meta name="author" content="inas boukili"/>
+    <meta name="description" content="il s'agit d'un site en php"/>
+    <title>Page en PHP</title>
+    <link rel="shortcut icon" type="image/png" href="icon.png"/>
+    <style>
+        
+        .digit {
+            color: black;
+        }
+
+        .uppercase {
+            color: green;
+        }
+
+        .lowercase {
+            color: blue;
+        }
+
+        .red-digits {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>XHTML5 et PHP(tests,boucles et fonctions)</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.php"> Page d'acceuil </a>
+            </li>
+            <li>
+                <a href="td5.php"> A propos du TD5 </a>
+            </li>
+            <li>
+                <a href="td6.php"> A propos du TD6 </a>
+            </li>
+            <li>
+                <a href="td7.php"> A propos du TD7 </a>
+            </li>
+            <li><a href="en_construction.php">En Construction</a></li>
+            <!-- Ajoutez le lien vers la page plan_du_site.php -->
+            <li><a href="plan_du_site.php">Plan du Site</a></li>
+           
+        </ul>
+    </nav>
+</header>
+
+
+
+<main>
+    <h1>Plan du site</h1>
+    <h2>Cette page est le plan du site</h2>
+    <figure>
+        <img src="plan.jpg" alt="" width="100%"/>
+    </figure>
+</main>
+
+<footer>
+        <span> 2024 L2 I-S4 : Développement Web BOUKILI INAS CYU CERGY PARIS UNIVERSITE</span>
+        <p>Navigateur de l'internaute : Google Chrome</p>
+        <p><a href="plan_du_site.php">Plan du Site</a></p>
+</footer>
+    
+</body>
+</html>

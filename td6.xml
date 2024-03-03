@@ -1,0 +1,130 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="stylee.css"/>
+    <meta name="author" content="inas boukili"/>
+    <meta name="description" content="il s'agit d'un site en php"/>
+    <title>Page en PHP</title>
+    <link rel="shortcut icon" type="image/png" href="icon.png"/>
+    <style>
+        
+        .digit {
+            color: black;
+        }
+
+        .uppercase {
+            color: green;
+        }
+
+        .lowercase {
+            color: blue;
+        }
+
+        .red-digits {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>XHTML5 et PHP(tests,boucles et fonctions)</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.php"> Page d'acceuil </a>
+            </li>
+            <li>
+                <a href="td5.php"> A propos du TD5 </a>
+            </li>
+            <li>
+                <a href="td6.php"> A propos du TD6 </a>
+            </li>
+            <li>
+                <a href="td7.php"> A propos du TD7 </a>
+            </li>
+            <li><a href="en_construction.php">En Construction</a></li>
+            <!-- Ajoutez le lien vers la page plan_du_site.php -->
+            <li><a href="plan_du_site.php">Plan du Site</a></li>
+           
+        </ul>
+    </nav>
+</header>
+
+
+
+<main>
+    <section id="exercice1">
+        <h2> exercice 1 </h2>
+        <h3>Table de multiplication avec les valeurs par défaut </h3>
+        <table class="multiplication-table">
+                    <thead>
+                        <tr>
+                            <th>times;</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr>
+                    </thead>
+                    <tbody><tr>
+                            <th>1</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr>
+                            <th>2</th><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td><td>14</td><td>16</td><td>18</td><td>20</td></tr><tr>
+                            <th>3</th><td>3</td><td>6</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td><td>24</td><td>27</td><td>30</td></tr><tr>
+                            <th>4</th><td>4</td><td>8</td><td>12</td><td>16</td><td>20</td><td>24</td><td>28</td><td>32</td><td>36</td><td>40</td></tr><tr>
+                            <th>5</th><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td><td>35</td><td>40</td><td>45</td><td>50</td></tr><tr>
+                            <th>6</th><td>6</td><td>12</td><td>18</td><td>24</td><td>30</td><td>36</td><td>42</td><td>48</td><td>54</td><td>60</td></tr><tr>
+                            <th>7</th><td>7</td><td>14</td><td>21</td><td>28</td><td>35</td><td>42</td><td>49</td><td>56</td><td>63</td><td>70</td></tr><tr>
+                            <th>8</th><td>8</td><td>16</td><td>24</td><td>32</td><td>40</td><td>48</td><td>56</td><td>64</td><td>72</td><td>80</td></tr><tr>
+                            <th>9</th><td>9</td><td>18</td><td>27</td><td>36</td><td>45</td><td>54</td><td>63</td><td>72</td><td>81</td><td>90</td></tr><tr>
+                            <th>10</th><td>10</td><td>20</td><td>30</td><td>40</td><td>50</td><td>60</td><td>70</td><td>80</td><td>90</td><td>100</td></tr></tbody></table>
+        <h3>Table de multiplication avec dimensions spécifiées</h3>
+        <table class="multiplication-table">
+                    <thead>
+                        <tr>
+                            <th>times;</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr>
+                    </thead>
+                    <tbody><tr>
+                            <th>1</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr>
+                            <th>2</th><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td><td>14</td><td>16</td><td>18</td><td>20</td></tr><tr>
+                            <th>3</th><td>3</td><td>6</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td><td>24</td><td>27</td><td>30</td></tr><tr>
+                            <th>4</th><td>4</td><td>8</td><td>12</td><td>16</td><td>20</td><td>24</td><td>28</td><td>32</td><td>36</td><td>40</td></tr><tr>
+                            <th>5</th><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td><td>35</td><td>40</td><td>45</td><td>50</td></tr><tr>
+                            <th>6</th><td>6</td><td>12</td><td>18</td><td>24</td><td>30</td><td>36</td><td>42</td><td>48</td><td>54</td><td>60</td></tr><tr>
+                            <th>7</th><td>7</td><td>14</td><td>21</td><td>28</td><td>35</td><td>42</td><td>49</td><td>56</td><td>63</td><td>70</td></tr><tr>
+                            <th>8</th><td>8</td><td>16</td><td>24</td><td>32</td><td>40</td><td>48</td><td>56</td><td>64</td><td>72</td><td>80</td></tr><tr>
+                            <th>9</th><td>9</td><td>18</td><td>27</td><td>36</td><td>45</td><td>54</td><td>63</td><td>72</td><td>81</td><td>90</td></tr><tr>
+                            <th>10</th><td>10</td><td>20</td><td>30</td><td>40</td><td>50</td><td>60</td><td>70</td><td>80</td><td>90</td><td>100</td></tr></tbody></table>    </section>
+
+    <section id="exercice2">
+        <h2> exercice 2 </h2>
+        <h3> Table ASCII </h3>
+        <table class="ascii-table">
+                    <thead>
+                        <tr>
+                            <th></th><th class="digit">0</th><th class="digit">1</th><th class="digit">2</th><th class="digit">3</th><th class="digit">4</th><th class="digit">5</th><th class="digit">6</th><th class="digit">7</th><th class="digit">8</th><th class="digit">9</th><th class="digit">a</th><th class="digit">b</th><th class="digit">c</th><th class="digit">d</th><th class="digit">e</th><th class="digit">f</th></tr>
+                    </thead>
+                    <tbody><tr>
+                            <th class="digit">2</th><td class=""> </td><td class="">!</td><td class="">&quot;</td><td class="">#</td><td class="">$</td><td class="">%</td><td class="">&amp;</td><td class="">&#039;</td><td class="">(</td><td class="">)</td><td class="">*</td><td class="">+</td><td class="">,</td><td class="">-</td><td class="">.</td><td class="">/</td></tr><tr>
+                            <th class="digit">3</th><td class="red-digits">0</td><td class="red-digits">1</td><td class="red-digits">2</td><td class="red-digits">3</td><td class="red-digits">4</td><td class="red-digits">5</td><td class="red-digits">6</td><td class="red-digits">7</td><td class="red-digits">8</td><td class="red-digits">9</td><td class="red-digits">:</td><td class="red-digits">;</td><td class="red-digits">&lt;</td><td class="red-digits">=</td><td class="red-digits">&gt;</td><td class="red-digits">?</td></tr><tr>
+                            <th class="digit">4</th><td class="">@</td><td class="uppercase">A</td><td class="uppercase">B</td><td class="uppercase">C</td><td class="uppercase">D</td><td class="uppercase">E</td><td class="uppercase">F</td><td class="uppercase">G</td><td class="uppercase">H</td><td class="uppercase">I</td><td class="uppercase">J</td><td class="uppercase">K</td><td class="uppercase">L</td><td class="uppercase">M</td><td class="uppercase">N</td><td class="uppercase">O</td></tr><tr>
+                            <th class="digit">5</th><td class="uppercase">P</td><td class="uppercase">Q</td><td class="uppercase">R</td><td class="uppercase">S</td><td class="uppercase">T</td><td class="uppercase">U</td><td class="uppercase">V</td><td class="uppercase">W</td><td class="uppercase">X</td><td class="uppercase">Y</td><td class="uppercase">Z</td><td class="">[</td><td class="">\</td><td class="">]</td><td class="">^</td><td class="">_</td></tr><tr>
+                            <th class="digit">6</th><td class="">`</td><td class="lowercase">a</td><td class="lowercase">b</td><td class="lowercase">c</td><td class="lowercase">d</td><td class="lowercase">e</td><td class="lowercase">f</td><td class="lowercase">g</td><td class="lowercase">h</td><td class="lowercase">i</td><td class="lowercase">j</td><td class="lowercase">k</td><td class="lowercase">l</td><td class="lowercase">m</td><td class="lowercase">n</td><td class="lowercase">o</td></tr><tr>
+                            <th class="digit">7</th><td class="lowercase">p</td><td class="lowercase">q</td><td class="lowercase">r</td><td class="lowercase">s</td><td class="lowercase">t</td><td class="lowercase">u</td><td class="lowercase">v</td><td class="lowercase">w</td><td class="lowercase">x</td><td class="lowercase">y</td><td class="lowercase">z</td><td class="">{</td><td class="">|</td><td class="">}</td><td class="">~</td><td class="">&#x00A0;</td></tr></tbody></table>    </section>
+</main>
+<footer>
+        <span> 2024 L2 I-S4 : Développement Web BOUKILI INAS CYU CERGY PARIS UNIVERSITE</span>
+        <p>Navigateur de l'internaute : Google Chrome</p>
+        <p><a href="plan_du_site.php">Plan du Site</a></p>
+</footer>
+    
+</body>
+</html>
+
+
+
+    
+

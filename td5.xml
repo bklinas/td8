@@ -1,0 +1,195 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="stylee.css"/>
+    <meta name="author" content="inas boukili"/>
+    <meta name="description" content="il s'agit d'un site en php"/>
+    <title>Page en PHP</title>
+    <link rel="shortcut icon" type="image/png" href="icon.png"/>
+    <style>
+        
+        .digit {
+            color: black;
+        }
+
+        .uppercase {
+            color: green;
+        }
+
+        .lowercase {
+            color: blue;
+        }
+
+        .red-digits {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>XHTML5 et PHP(tests,boucles et fonctions)</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.php"> Page d'acceuil </a>
+            </li>
+            <li>
+                <a href="td5.php"> A propos du TD5 </a>
+            </li>
+            <li>
+                <a href="td6.php"> A propos du TD6 </a>
+            </li>
+            <li>
+                <a href="td7.php"> A propos du TD7 </a>
+            </li>
+            <li><a href="en_construction.php">En Construction</a></li>
+            <!-- Ajoutez le lien vers la page plan_du_site.php -->
+            <li><a href="plan_du_site.php">Plan du Site</a></li>
+           
+        </ul>
+    </nav>
+</header>
+
+
+
+<main>
+    <section id="exercice1">
+        <h2>Exercice 1</h2>
+        <h3>Afficher la date du serveur</h3>
+        Tuesday 27th of February 2024 11:17:20 AM     </section>
+
+    <section id="exercice2">
+        <h2>Exercice 2</h2>
+        <h3>Afficher une liste avec une fonction PHP</h3>
+        <ul><li> hello numéro 1</li><li> hello numéro 2</li><li> hello numéro 3</li><li> hello numéro 4</li><li> hello numéro 5</li><li> hello numéro 6</li><li> hello numéro 7</li><li> hello numéro 8</li><li> hello numéro 9</li><li> hello numéro 10</li><li> hello numéro 11</li><li> hello numéro 12</li><li> hello numéro 13</li><li> hello numéro 14</li><li> hello numéro 15</li><li> hello numéro 16</li><li> hello numéro 17</li><li> hello numéro 18</li><li> hello numéro 19</li><li> hello numéro 20</li></ul>    </section>
+
+    <section id="exercice3">
+        <h2>Exercice 3</h2>
+        <h3>Conversions hexadécimales</h3>
+        0x41 = 65 = 'A'        0x2B = 43 = '+'    </section>
+
+    <section id="exercice4">
+        <h2>Exercice 4</h2>
+        <h3>Liste horizontale de nombres hexadécimaux</h3>
+        <ul><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>a</li><li>b</li><li>c</li><li>d</li><li>e</li><li>f</li></ul>    </section>
+
+    <section id="exercice5">
+        <h2>Exercice 5</h2>
+        <h3>Tableau de conversions numériques</h3>
+        <table>
+                    <tr>
+                        <th>Décimal</th>
+                        <th>Binaire</th>
+                        <th>Octal</th>
+                        <th>Hexadécimal</th>
+                    </tr><tr>
+                        <td>00</td>
+                        <td>00000000</td>
+                        <td>00</td>
+                        <td>00</td>
+                    </tr><tr>
+                        <td>01</td>
+                        <td>00000001</td>
+                        <td>01</td>
+                        <td>01</td>
+                    </tr><tr>
+                        <td>02</td>
+                        <td>00000010</td>
+                        <td>02</td>
+                        <td>02</td>
+                    </tr><tr>
+                        <td>03</td>
+                        <td>00000011</td>
+                        <td>03</td>
+                        <td>03</td>
+                    </tr><tr>
+                        <td>04</td>
+                        <td>00000100</td>
+                        <td>04</td>
+                        <td>04</td>
+                    </tr><tr>
+                        <td>05</td>
+                        <td>00000101</td>
+                        <td>05</td>
+                        <td>05</td>
+                    </tr><tr>
+                        <td>06</td>
+                        <td>00000110</td>
+                        <td>06</td>
+                        <td>06</td>
+                    </tr><tr>
+                        <td>07</td>
+                        <td>00000111</td>
+                        <td>07</td>
+                        <td>07</td>
+                    </tr><tr>
+                        <td>08</td>
+                        <td>00001000</td>
+                        <td>10</td>
+                        <td>08</td>
+                    </tr><tr>
+                        <td>09</td>
+                        <td>00001001</td>
+                        <td>11</td>
+                        <td>09</td>
+                    </tr><tr>
+                        <td>10</td>
+                        <td>00001010</td>
+                        <td>12</td>
+                        <td>0a</td>
+                    </tr><tr>
+                        <td>11</td>
+                        <td>00001011</td>
+                        <td>13</td>
+                        <td>0b</td>
+                    </tr><tr>
+                        <td>12</td>
+                        <td>00001100</td>
+                        <td>14</td>
+                        <td>0c</td>
+                    </tr><tr>
+                        <td>13</td>
+                        <td>00001101</td>
+                        <td>15</td>
+                        <td>0d</td>
+                    </tr><tr>
+                        <td>14</td>
+                        <td>00001110</td>
+                        <td>16</td>
+                        <td>0e</td>
+                    </tr><tr>
+                        <td>15</td>
+                        <td>00001111</td>
+                        <td>17</td>
+                        <td>0f</td>
+                    </tr><tr>
+                        <td>16</td>
+                        <td>00010000</td>
+                        <td>20</td>
+                        <td>10</td>
+                    </tr><tr>
+                        <td>17</td>
+                        <td>00010001</td>
+                        <td>21</td>
+                        <td>11</td>
+                    </tr></table>    </section>
+</main>
+<footer>
+        <span> 2024 L2 I-S4 : Développement Web BOUKILI INAS CYU CERGY PARIS UNIVERSITE</span>
+        <p>Navigateur de l'internaute : Google Chrome</p>
+        <p><a href="plan_du_site.php">Plan du Site</a></p>
+</footer>
+    
+</body>
+</html>
+
+
